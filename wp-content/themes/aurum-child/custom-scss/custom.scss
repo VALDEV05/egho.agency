@@ -25,6 +25,9 @@ $color-purple: #9067c6;
 $color-black: #121212;
 $color-white: #f2f2f2;
 $color-grey: #cac4ce;
+$font-default: "fontRegular";
+$font-default_italic: "fontRegularItalic";
+$font-title: "fontTitle";
 
 /* ==========================================================================
   2.0 - Reset
@@ -210,10 +213,64 @@ button {
   3.0 - Fonts
    ========================================================================== */
 
+@font-face {
+    font-family: fontRegular;
+    src: url("../../../../webfont_egho/TestSöhne-Buch.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: fontRegular;
+    src: url("../../../../webfont_egho/TestSöhne-BuchKursiv.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: fontTitle;
+    src: url("../../../../webfont_egho/TestSöhne-Kräftig.woff2") format("woff2");
+}
+
 
 /* ==========================================================================
   4.0 - Globals
    ========================================================================== */
+
+body {
+    * {
+        font-family: $font-default;
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    background-color: $color-white;
+    font-family: $font-default;
+    color: $color-black;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 149.1%;
+    h1 {
+        font-size: 180px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 98%;
+    }
+    h2 {
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    h3 {
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 107.1%;
+    }
+    h4 {
+        font-size: 100px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 88%;
+    }
+}
 
 
 /* ==========================================================================
