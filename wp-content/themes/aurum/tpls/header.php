@@ -31,7 +31,7 @@ $has_secondary_menu = $header_type && has_nav_menu( 'secondary-menu' );
 						get_template_part( 'tpls/header-logo' );
 						
 						if ( $header_type == 1 ) {
-							get_template_part( 'tpls/header-menu' );
+							get_template_part( 'tpls/header-menu_old' );
 						}
 					?>
 
